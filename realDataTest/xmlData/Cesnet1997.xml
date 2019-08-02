@@ -1,0 +1,27 @@
+<topology asn="100">
+    <node internal="true" name="n0"></node>
+    <node internal="true" name="n1"></node>
+    <node internal="true" name="n2"></node>
+    <node internal="true" name="n3"></node>
+    <node internal="true" name="n4"></node>
+    <node internal="true" name="n5"></node>
+    <node internal="true" name="n6"></node>
+    <node internal="true" name="n7"></node>
+    <node internal="true" name="n8"></node>
+    <node internal="true" name="n9"></node>
+    <node internal="true" name="n10"></node>
+    <node internal="true" name="n11"></node>
+    <node internal="true" name="n12"></node>
+    <edge source="n0" target="n1"></edge>
+    <edge source="n1" target="n9"></edge>
+    <edge source="n1" target="n2"></edge>
+    <edge source="n1" target="n11"></edge>
+    <edge source="n1" target="n10"></edge>
+    <edge source="n3" target="n10"></edge>
+    <edge source="n4" target="n11"></edge>
+    <edge source="n5" target="n11"></edge>
+    <edge source="n6" target="n8"></edge>
+    <edge source="n6" target="n12"></edge>
+    <edge source="n7" target="n12"></edge>
+    <edge source="n10" target="n12"></edge>
+</topology>

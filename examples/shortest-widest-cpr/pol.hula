@@ -1,0 +1,10 @@
+if path.util < 549756 then 
+	(1, path.length, path.util)
+else if path.util < 1099512 then 
+	(2, path.length, path.util)
+else if path.util < 1649267 then
+	(3, path.length, path.util)
+else if path.util < 2199023 then
+	(4, path.length, path.util)
+else
+	(5, path.util, path.length)

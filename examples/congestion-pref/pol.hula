@@ -1,0 +1,4 @@
+if path.util < 1024000 then 
+	(1, path.util, 0)
+else 
+	(2, path.length, path.util)

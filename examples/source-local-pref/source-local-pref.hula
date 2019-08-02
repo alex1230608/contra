@@ -1,0 +1,4 @@
+if matches(n0;.*) then
+    path.util
+else
+    path.latency

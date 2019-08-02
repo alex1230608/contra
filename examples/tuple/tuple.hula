@@ -1,0 +1,3 @@
+if matches(.*;B;.*) 
+	then (1 ,path.length)
+	else (2 ,path.length)

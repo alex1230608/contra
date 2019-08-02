@@ -1,0 +1,4 @@
+if matches(.*;(A+B);.*) then 
+   path.util
+else 
+   2 * path.length

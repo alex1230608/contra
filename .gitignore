@@ -1,0 +1,16 @@
+packages/
+build/
+output/
+.DS_Store
+*.userprefs
+*.aux
+*.pcap
+throughput_*.txt
+log_*
+*.log
+error_*.txt
+dump-*.txt
+*.pyc
+workloads/all-workloads/generate
+workloads/all-workloads/log
+tmp.txt

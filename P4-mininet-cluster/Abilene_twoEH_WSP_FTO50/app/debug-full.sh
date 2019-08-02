@@ -1,0 +1,1 @@
+grep -v -E "(isValid|no source info)" build/logs/*.log | grep -E "(\*|Primitive|Condition|Applying|Action entry|Table)"

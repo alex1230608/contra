@@ -1,0 +1,10 @@
+
+Notes on the files:
+
+the .tcl files have roughly the same content with the .txt files, but the unit here is the number of MTU-sized packets (MTU=1500 or 1460)
+
+In other words, if the flow size is N, then the size in bytes is N*MTU bytes
+
+
+
+---> Wei Bai suggested that we use the .txt files instead of the .tcl files. there are some slight differences in the DM workload (in other words, the VL2_CDF file. please use the .txt file, not the .tcl file (one of them has a point at 0.98 on the x-axis of the CDF, and another one at 0.99. But the difference is large when you generate the load.))

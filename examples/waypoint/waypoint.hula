@@ -1,0 +1,6 @@
+if matches(L1;.*;S1;.*) then 
+   (1, path.length, path.util)
+else if matches(L2;.*;S2;.*) then
+   (1, path.length, path.util)
+else 
+   (2, path.length, path.util)

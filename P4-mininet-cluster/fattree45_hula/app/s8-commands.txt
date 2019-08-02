@@ -1,0 +1,73 @@
+table_add tab_hulapp_mcast set_hulapp_mcast 1 => 1
+table_add tab_forward_to_end_hosts mcast_to_all_end_hosts 0x0806 0&&&0 1 0&&&0 => 2 100
+table_add tab_forward_to_end_hosts forward_to_end_hosts 0x0800 6&&&0xFF 1 10.0.0.21&&&255.255.0.255 => 5 100
+table_add tab_forward_to_end_hosts forward_to_end_hosts 0x0800 6&&&0xFF 1 10.0.0.22&&&255.255.0.255 => 6 100
+table_add tab_forward_to_end_hosts forward_to_end_hosts 0x0800 6&&&0xFF 1 10.0.0.23&&&255.255.0.255 => 7 100
+table_add tab_prefix_to_id update_id 10.0.1.0/24 => 0
+table_add tab_prefix_to_id update_id 10.0.2.0/24 => 1
+table_add tab_prefix_to_id update_id 10.0.3.0/24 => 2
+table_add tab_prefix_to_id update_id 10.0.4.0/24 => 3
+table_add tab_prefix_to_id update_id 10.0.5.0/24 => 4
+table_add tab_prefix_to_id update_id 10.0.6.0/24 => 5
+table_add tab_prefix_to_id update_id 10.0.7.0/24 => 6
+table_add tab_prefix_to_id update_id 10.0.8.0/24 => 7
+table_add tab_prefix_to_id update_id 10.0.9.0/24 => 8
+table_add tab_prefix_to_id update_id 10.0.10.0/24 => 9
+table_add tab_prefix_to_id update_id 10.0.11.0/24 => 10
+table_add tab_prefix_to_id update_id 10.0.12.0/24 => 11
+table_add tab_prefix_to_id update_id 10.0.13.0/24 => 12
+table_add tab_prefix_to_id update_id 10.0.14.0/24 => 13
+table_add tab_prefix_to_id update_id 10.0.15.0/24 => 14
+table_add tab_prefix_to_id update_id 10.0.16.0/24 => 15
+table_add tab_prefix_to_id update_id 10.0.17.0/24 => 16
+table_add tab_prefix_to_id update_id 10.0.18.0/24 => 17
+register_write decision_f2 0 9999999
+register_write decision_f2 1 9999999
+register_write decision_f2 2 9999999
+register_write decision_f2 3 9999999
+register_write decision_f2 4 9999999
+register_write decision_f2 5 9999999
+register_write decision_f2 6 9999999
+register_write decision_f2 7 9999999
+register_write decision_f2 8 9999999
+register_write decision_f2 9 9999999
+register_write decision_f2 10 9999999
+register_write decision_f2 11 9999999
+register_write decision_f2 12 9999999
+register_write decision_f2 13 9999999
+register_write decision_f2 14 9999999
+register_write decision_f2 15 9999999
+register_write decision_f2 16 9999999
+register_write decision_f2 17 9999999
+register_write choices_f2 0 9999999
+register_write choices_f2 1 9999999
+register_write choices_f2 2 9999999
+register_write choices_f2 3 9999999
+register_write choices_f2 4 9999999
+register_write choices_f2 5 9999999
+register_write choices_f2 6 9999999
+register_write choices_f2 7 9999999
+register_write choices_f2 8 9999999
+register_write choices_f2 9 9999999
+register_write choices_f2 10 9999999
+register_write choices_f2 11 9999999
+register_write choices_f2 12 9999999
+register_write choices_f2 13 9999999
+register_write choices_f2 14 9999999
+register_write choices_f2 15 9999999
+register_write choices_f2 16 9999999
+register_write choices_f2 17 9999999
+mc_mgrp_create 1
+mc_node_create 0 2
+mc_node_associate 1 0
+mc_node_create 1 3
+mc_node_associate 1 1
+mc_node_create 2 4
+mc_node_associate 1 2
+mc_mgrp_create 2
+mc_node_create 3 5
+mc_node_associate 2 3
+mc_node_create 4 6
+mc_node_associate 2 4
+mc_node_create 5 7
+mc_node_associate 2 5

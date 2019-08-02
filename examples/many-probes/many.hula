@@ -1,0 +1,4 @@
+if matches(.*) then 
+	path.util 
+else 
+	path.length + 1
