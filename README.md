@@ -38,6 +38,7 @@ Environment Setup
 4. Run `packages.sh` on each machine separately (at least 10 secs away to avoid connection fail)
 
 *Note:* You may want to run `sudo apt-get update` before running `packages.sh`
+
 *Note:* Since the switch and host programs are distributed across the emulated network and therefore may be placed in different cluster nodes (according to the `p4app.json`), please make sure the corresponding input and output files, and the codes are deployed in the right place. For example, to make the p4 json files and many other related files in `build` folder available to switches on cluster node 1, you need to compile the p4 programs on node 1 instead of only compiling the programs on the master node. Same goes for workload files, too. **One easy way** to make sure everything is ready before running the program is to do every command below on every cluster node (should be easy with `cssh` tool), but only run the `run.sh` on the master.
 
 Build Contra compiler
