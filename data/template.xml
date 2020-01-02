@@ -1,0 +1,43 @@
+<topology asn="">
+  <node internal="true" name=""></node>
+  <node internal="true" name="" asn="" device="" group="" vars="prefix=1.2.3.4/24, pfx=5.5.5.5/32"></node>
+  
+  <edge source="" target="" source-ip="" target-ip=""></edge>
+  <edge source="" target="" source-ip="" target-ip=""></edge>
+
+  <pod name="" group="">
+	  <element>X</element>
+	  <element>Y</element>
+  </pod>
+  
+  <pod name="" group="">
+	  <element>X</element>
+	  <element>Y</element>
+  </pod>
+
+  <abstractnode internal="false" label=""></abstractnode>
+  <abstractnode internal="true" label=""></abstractnode>
+  
+  <abstractedge source="" target="" labels=""></abstractedge>
+  <abstractedge source="" target="" labels="">
+  	  <custom-label>foo</custom-label>
+	  <custom-label>foo</custom-label>
+  </abstractedge>
+  
+  <abstractpod label="">
+	  <element>X</element>
+	  <element>Y</element>
+  </abstractpod>
+  
+  <abstractpod label="">
+	  <element>X</element>
+	  <element>Y</element>
+  </abstractpod>
+  
+  <constraint assertion=""></constraint>
+  <constraint assertion=""></constraint>
+  
+  <data vars="prefix=1.2.3.4"></data>
+  <data vars="prefix=1.2.3.4"></data>
+  
+</topology>
