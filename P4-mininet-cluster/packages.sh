@@ -13,7 +13,7 @@ cd contra
 
 git clone git://github.com/mininet/mininet
 cd mininet
-git tag  # list available versions
+git fetch --all --tags # fetch available versions
 git checkout -b 2.2.2 2.2.2  # or whatever version you wish to install
 cd ..
 mininet/util/install.sh -a
@@ -23,7 +23,8 @@ mininet/util/install.sh -a
 git clone https://github.com/protocolbuffers/protobuf.git
 cd protobuf
 git submodule update --init --recursive
-git checkout -b v3.2.0
+git fetch --all --tags
+git checkout -b v3.2.0 v3.2.0
 ./autogen.sh
 ./configure
 make -j4
@@ -36,6 +37,7 @@ cd ..
 git clone https://github.com/p4lang/behavioral-model.git
 cd behavioral-model
 git checkout 50d1b9cb11100c8b010f76b9bc2daabd97425f6d
+git checkout cd9acb69b84bd414e68d25717b8661f7b9e56fcb travis/install-thrift.sh
 sh travis/install-thrift.sh
 sh travis/install-nanomsg.sh
 sh travis/install-nnpy.sh
