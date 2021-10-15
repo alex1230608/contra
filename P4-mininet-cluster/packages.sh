@@ -4,6 +4,7 @@ sudo apt-get install -y automake cmake libjudy-dev libgmp-dev libpcap-dev libboo
 sudo apt-get install -y cmake g++ git automake libtool libgc-dev bison flex libfl-dev libgmp-dev libboost-dev libboost-iostreams-dev libboost-graph-dev llvm pkg-config python python-scapy python-ipaddr python-ply tcpdump
 sudo apt-get install -y doxygen graphviz texlive-full
 sudo apt-get install -y python-pip
+sudo apt-get install -y curl
 sudo pip uninstall cffi
 sudo pip install cffi==1.5.2
 sudo ln -s /usr/bin/mcs /usr/bin/gmcs
