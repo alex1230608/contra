@@ -39,9 +39,9 @@ git clone https://github.com/p4lang/behavioral-model.git
 cd behavioral-model
 git checkout 50d1b9cb11100c8b010f76b9bc2daabd97425f6d
 git checkout cd9acb69b84bd414e68d25717b8661f7b9e56fcb travis/install-thrift.sh
-sh travis/install-thrift.sh
-sh travis/install-nanomsg.sh
-sh travis/install-nnpy.sh
+bash travis/install-thrift.sh
+bash travis/install-nanomsg.sh
+bash travis/install-nnpy.sh
 ./autogen.sh
 ./configure --disable-logging-macros --disable-elogger 'CFLAGS=-O3' 'CXXFLAGS=-O3'
 make -j4
